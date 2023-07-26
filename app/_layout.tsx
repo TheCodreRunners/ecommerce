@@ -28,7 +28,7 @@ SplashScreen.preventAutoHideAsync()
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    Poppins: require('../assets/fonts/Poppins-Regular.ttf'),
     ...FontAwesome.font,
   })
 
@@ -64,8 +64,8 @@ function RootLayoutNav() {
             options={{ headerShown: false }}
           />
           <Stack.Screen
-            name="screens/modal"
-            options={{ presentation: 'modal' }}
+            name="screens/categories"
+            options={{ title: 'Categorias' }}
           />
         </Stack>
       </ThemeProvider>

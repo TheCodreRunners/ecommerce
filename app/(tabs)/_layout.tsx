@@ -33,8 +33,8 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => (
             <TabBarIcon name="code" color={color} />
           ),
-          headerRight: () => (
-            <Link href="/screens/modal" asChild>
+          headerLeft: () => (
+            <Link href="/screens/categories" asChild>
               <Pressable>
                 {({ pressed }) => (
                   <FontAwesome
@@ -42,7 +42,7 @@ export default function TabLayout() {
                     size={25}
                     color={Colors[colorScheme ?? 'light'].text}
                     style={{
-                      marginRight: 15,
+                      marginLeft: '20%',
                       opacity: pressed ? 0.5 : 1,
                     }}
                   />
